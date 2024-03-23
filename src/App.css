@@ -1,0 +1,231 @@
+header {
+  background-color: #0F0F0F;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+  margin: 0;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+
+.nav-links {
+  margin: 0.2rem 0.4rem;
+  padding: 0.5rem;
+  color: #ebce5b;
+  text-align: center;
+  width: 4rem;
+}
+
+.nav-links:hover {
+  color: #F4D03F;
+  font-weight: bold;
+}
+
+.warning {
+  border: 1px solid red;
+}
+.text-center {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+
+.headline {
+  font-weight: semibold;
+  margin: 10px 0;
+}
+
+.paragraph {
+  margin-bottom: 1rem;
+}
+
+.coder-image {
+  max-width: 25rem;
+}
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #16A085 0%, #F4D03F  51%, #16A085  100%);
+  margin: 10px 0;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  /* box-shadow: 0 0 0.4rem #eee; */
+  border-radius: 0.5rem;
+  display: block;
+  width: fit-content;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  box-shadow: 0 0 0.7rem #eee;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.skill-section {
+  margin-top: 2rem;
+}
+.skill-section h1 {
+  text-align: center;
+}
+.skill-features{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+  justify-content: center;
+}
+.skill-container {
+  border: 0.2rem solid #0F0F0F;
+  padding: 0.6rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+.skill-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+/* Project Page */
+
+.heading {
+  margin: 2rem 0;
+  font-size: 4.5rem;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.card {
+  max-width: 440px;
+  padding: 0.8rem;
+  margin: 1rem;
+  background-color: #1f1e1e;
+  border-radius: 0.9rem;
+  box-shadow: 2px 2px 6px #313131;
+}
+.card img {
+  width: 100%;
+}
+.card-left {
+  margin-left: 0.5rem;
+}
+.card .title {
+  font-weight: 600;
+  margin-top: 3px;
+  font-size: 2rem;
+}
+.card .desc {
+  margin-top: 4px;
+} 
+
+/* Contact Page */
+.Main{
+  width:90%;
+  margin: 5rem auto;
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  background-color: #1d1d1b;
+  border-radius: 15px;
+  box-shadow: 2px 2px 6px #313131;
+}
+
+.right-side {
+  flex-grow: 1;
+  max-width: 420px;
+  margin: auto;
+}
+
+.Contact{
+  text-align: center;
+  margin: 10px;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-left: 50px;
+}
+
+.contect-section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.address-section{
+  width: 38%;
+  margin-top: 13px;
+}
+.address-section p {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+}
+.textbox {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 7px 1rem;
+  border-radius: 1rem;
+  width: 90%;
+  margin: 10px;
+}
+
+.textarea {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 90%;
+  margin: 10px;
+  resize: none;
+}
+
+.Submit{
+  text-align: center;
+}
+/* Utility */
+.mt-6 {
+  margin-top: 6rem;
+}
