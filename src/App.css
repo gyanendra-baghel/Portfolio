@@ -49,6 +49,7 @@ header {
 .wrapper {
   display: flex;
   justify-content: center;
+  /* flex-wrap: wrap; */
   align-items: center;
   width: 90%;
   max-width: 960px;
@@ -228,4 +229,14 @@ header {
 /* Utility */
 .mt-6 {
   margin-top: 6rem;
+}
+@media screen and (max-width: 720px) {
+  .wrapper .coder-image {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .wrapper .coder-image {
+    max-width: 20rem
+  }
 }
