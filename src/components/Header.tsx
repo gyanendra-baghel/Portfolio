@@ -11,9 +11,9 @@ const Header:React.FC<HeaderProps> = ({type}) => {
         <div className="container">
             <Link to="/" className="logo">Gyanendra</Link>
             <nav className="hidden md:flex space-x-4">
-                {type == "home" && <a href="/#skills" className="nav-links">Skills</a>}
-                <Link to="/projects" className="nav-links">Projects</Link>
-                <Link to="/contact" className="nav-links">Contact</Link>
+                {type == "home" && <a href="/#skills" className="nav-link">Skills</a>}
+                <Link to="/projects" className="nav-link">Projects</Link>
+                <Link to="/contact" className="nav-link">Contact</Link>
             </nav>
         </div>
     </header>

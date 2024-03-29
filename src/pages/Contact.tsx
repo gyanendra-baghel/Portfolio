@@ -38,8 +38,8 @@ const Contact: React.FC = () => {
     return (
         <>
         <Header type='other'/>
-        <main className='Main'>
-            <div className='right-side'>
+        <main className='wrapper'>
+            <div className='contact-section'>
                 <h1 className="heading text-center">Contact us</h1>
                 <form className="contect-section">
                     <div className="mb-4">
@@ -51,8 +51,8 @@ const Contact: React.FC = () => {
                     <div className="mb-4">
                         <textarea className="Message-Section textarea" placeholder="Enter Message..." value={message} onChange={(e) => { setMessage(e.target.value) }}></textarea>
                     </div>
-                    <div className="Submit">
-                        <button type="submit" className={`w-full py-2 bg-blue-500 text-white rounded ${btnDisabled ? "opacity-75 cursor-not-allowed" : ""}`} onClick={(e) => { handleForm(e) }} disabled={btnDisabled}>Send Message</button>
+                    <div className="txt-center">
+                        <button type="submit" className="submit-btn" onClick={(e) => { handleForm(e) }} disabled={btnDisabled}>Send Message</button>
                     </div>
                     <p className="text-red-800 font-bold text-center">{response}</p>
                 </form>
