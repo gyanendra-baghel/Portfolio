@@ -9,12 +9,12 @@ type Props = {}
 function Projects({}: Props) {
   return (
     <div>
-        <Header/>
+        <Header type='other'/>
         <main className="wrapper column">
             <h1 className="heading mt-6">Projects</h1>
             <hr/>
             <div className="features">
-              <ProjectCard title="ChatNow" image={ChatNow} description="ChatNow is a real-time chat application built using React.js and Express." source="https://github.com/gyanendra-baghel/ChatNow"/>
+              <ProjectCard title="ChatNow" image={ChatNow} description="ChatNow is a real-time chat application built using React.js, Express and Socket.io." source="https://github.com/gyanendra-baghel/ChatNow"/>
               <ProjectCard title="Cut.it" image={CutIt} description="Cut.it allows you to create concise and memorable short links for your long URLs. " source="https://github.com/gyanendra-baghel/Cut.it"/>
               <ProjectCard title="Gyan" image={Gyan} description="This search engine is implemented using PHP and MySQL, providing a powerful and efficient way to retrieve information." source="https://github.com/gyanendra-baghel/Gyan-SearchEngine"/>
             </div>

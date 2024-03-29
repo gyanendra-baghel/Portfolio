@@ -7,7 +7,7 @@ import { HtmlIcon, CssIcon, JavaScriptIcon, ReactJsIcon, TailwindIcon, PhpIcon, 
 const Home:React.FC = () => {
   return (
     <>
-      <Header/>
+      <Header type='home'/>
       <main className="">
         <div className="wrapper">
           <div className="">
@@ -24,8 +24,8 @@ const Home:React.FC = () => {
           <h1 id='skills' className="">Skills</h1>
           <div className='skill-features'>
             <div className='skill-container'>
-              <h2 className='h2 font-bold text-3xl text-gray-500 text-center'>Frontend</h2>
-              <div className='flex flex-wrap p-4'>
+              <h2 className=''>Frontend</h2>
+              <div className='skills'>
                 <HtmlIcon />
                 <CssIcon />
                 <JavaScriptIcon />
@@ -34,8 +34,8 @@ const Home:React.FC = () => {
               </div>
             </div>
             <div className='skill-container'>
-              <h2 className='h2  font-bold text-3xl text-gray-500 text-center'>Backend</h2>
-              <div className='flex flex-wrap p-4'>
+              <h2 className=''>Backend</h2>
+              <div className='skills'>
                 <PhpIcon />
                 <NextJsIcon />
                 <MySQLIcon />
@@ -43,8 +43,8 @@ const Home:React.FC = () => {
               </div>
             </div>
             <div className='skill-container'>
-              <h2 className='h2 font-bold text-3xl text-gray-500 text-center'>Other</h2>
-              <div className='flex flex-wrap p-4'>
+              <h2 className=''>Other</h2>
+              <div className='skills'>
                 <CIcon />
                 <CppIcon />
                 <JavaIcon />

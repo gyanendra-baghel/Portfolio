@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 const NotFound: React.FC = () => {
   return (
     <>
-    <Header/>
+    <Header type='other'/>
       <div className='wrapper column'>
         <h1>404 - Not Found</h1>
         <p className='headline'>The page you are looking for does not exist.</p>

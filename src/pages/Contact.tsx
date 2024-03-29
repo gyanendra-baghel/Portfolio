@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
 
     return (
         <>
-        <Header/>
+        <Header type='other'/>
         <main className='Main'>
             <div className='right-side'>
                 <h1 className="heading text-center">Contact us</h1>
