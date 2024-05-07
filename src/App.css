@@ -16,10 +16,11 @@ header {
   justify-content: space-between;
 }
 
-.logo {
+.logo img{
   will-change: filter;
   transition: filter 300ms;
-  margin: 0;
+  margin-top: 5px;
+  height: 25px;
   font-weight: bold;
   font-size: 1.5rem;
   font-style: italic;
