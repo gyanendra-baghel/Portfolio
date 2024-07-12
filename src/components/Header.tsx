@@ -1,23 +1,28 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 interface HeaderProps {
-  type: string
+  type: string;
 }
 
-const Header:React.FC<HeaderProps> = ({type}) => {
+const Header: React.FC<HeaderProps> = () => {
   return (
     <header>
-        <div className="container">
-            <Link to="/" className="logo"><img src="/signature.png"/></Link>
-            <nav className="hidden md:flex space-x-4">
-                {type == "home" && <a href="/#skills" className="nav-link">Skills</a>}
-                <Link to="/projects" className="nav-link">Projects</Link>
-                <Link to="/contact" className="nav-link">Contact</Link>
-            </nav>
-        </div>
+      <div className="container">
+        <Link to="/" className="logo">
+          <img src="/signature.png" />
+        </Link>
+        <nav className="hidden md:flex space-x-4">
+          <Link to="/projects" className="nav-link">
+            Projects
+          </Link>
+          <Link to="/contact" className="nav-link">
+            Contact
+          </Link>
+        </nav>
+      </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
