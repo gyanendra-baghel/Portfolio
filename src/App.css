@@ -1,6 +1,6 @@
 header {
   background-color: #0f0f0f;
-  padding: 5px 0;
+  padding: 5px;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,9 +8,10 @@ header {
   z-index: 50;
 }
 .container {
+  width: 100%;
   max-width: 960px;
   margin: auto;
-  padding: 0 5px;
+  /* padding: 0 5px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,12 +59,12 @@ header {
 .wrapper {
   display: flex;
   justify-content: center;
-  position: relative;
   align-items: center;
-  max-width: 960px;
-  margin: auto;
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
   flex-grow: 1;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .headline {
@@ -80,7 +81,8 @@ header {
 }
 
 .social-links {
-  max-width: 320px;
+  width: 320px;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -197,8 +199,7 @@ header {
   border-radius: 15px;
   box-shadow: 2px 2px 6px #313131;
   max-width: 420px;
-  margin: 3rem auto;
-  margin-top: 5rem;
+  /* margin: auto; */
 }
 
 .Contact {
@@ -269,6 +270,10 @@ header {
   margin-top: 6rem;
 }
 @media screen and (max-width: 720px) {
+  .heading {
+    margin: 2rem 0;
+    font-size: 3.5rem;
+  }
   .nav-link {
     padding: 0.2rem;
     margin: 0.2rem;

@@ -7,9 +7,9 @@ type Props = {};
 function Projects({}: Props) {
   return (
     <div>
-      <Header type="other" />
+      <Header />
       <main className="wrapper column">
-        <h1 className="heading mt-6">Projects</h1>
+        <h1 className="heading">Projects</h1>
         <hr />
         <div className="features">
           <ProjectCard

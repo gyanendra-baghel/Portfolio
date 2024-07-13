@@ -23,7 +23,7 @@ import SocialLinks from "../components/SocialLinks";
 const Home: React.FC = () => {
   return (
     <>
-      <Header type="home" />
+      <Header />
       <main className="">
         <div className="wrapper-container">
           <div className="wrapper">
