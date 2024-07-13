@@ -18,32 +18,37 @@ import {
   PythonIcon,
   GitIcon,
 } from "../assets/Icons";
+import SocialLinks from "../components/SocialLinks";
 
 const Home: React.FC = () => {
   return (
     <>
       <Header type="home" />
       <main className="">
-        <div className="wrapper">
-          <div className="">
-            <h3 className="headline">Hi !</h3>
-            <h1 className="">I'm Gyanendra Baghel</h1>
-            <h3 className="headline">
-              I'm a{" "}
-              <b className="text-gradient gradient-purple-darkpurple">
-                FullStack Developer
-              </b>
-            </h3>
-            <p className="paragraph">
-              I am building and designing software and also exploring fields of
-              ML and Cloud. Currently, I am working on web application using
-              technologies like React, Express, Tailwind, Next JS and MongoDB.
-            </p>
-            <a href="/doc/Resume-Gyanendra-Singh.pdf" className="btn-grad">
-              Download Resume
-            </a>
+        <div className="wrapper-container">
+          <div className="wrapper">
+            <div className="">
+              <h3 className="headline">Hi !</h3>
+              <h1 className="">I'm Gyanendra Baghel</h1>
+              <h3 className="headline">
+                I'm a{" "}
+                <b className="text-gradient gradient-purple-darkpurple">
+                  FullStack Developer
+                </b>
+              </h3>
+              <p className="paragraph">
+                I am building and designing software and also exploring fields
+                of ML and Cloud. Currently, I am working on web application
+                using technologies like React, Express, Tailwind, Next JS and
+                MongoDB.
+              </p>
+              <a href="/doc/Resume-Gyanendra-Singh.pdf" className="btn-grad">
+                Download Resume
+              </a>
+            </div>
+            <img className="coder-image" src={CoderImage} />
           </div>
-          <img className="coder-image" src={CoderImage} />
+          <SocialLinks />
         </div>
         <hr style={{ borderColor: "#bbb" }} />
         <div className="skill-section">

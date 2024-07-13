@@ -10,6 +10,7 @@ header {
 .container {
   max-width: 960px;
   margin: auto;
+  padding: 0 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,6 +49,12 @@ header {
   text-align: center;
 }
 
+.wrapper-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -55,7 +62,8 @@ header {
   align-items: center;
   max-width: 960px;
   margin: auto;
-  min-height: 100vh;
+  flex-grow: 1;
+  margin-top: 5rem;
 }
 
 .headline {
@@ -69,6 +77,14 @@ header {
 
 .coder-image {
   max-width: 25rem;
+}
+
+.social-links {
+  max-width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
 
 .btn-grad {

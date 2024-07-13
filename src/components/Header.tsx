@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = () => {
         <Link to="/" className="logo">
           <img src="/signature.png" />
         </Link>
-        <nav className="hidden md:flex space-x-4">
+        <nav>
           <Link to="/projects" className="nav-link">
             Projects
           </Link>
